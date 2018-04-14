@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">تغییر چهره هوشمند</string>
+    <string name="funny_face_maker">تغییر چهره هوشمند</string>
+
+    <!--<string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--<string name="interestritial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--<string name="express_ad_unit_id">ca-app-pub-3940256099942544/1072772517</string> -->
+
+    <string name="banner_ad_unit_id">a</string>
+    <string name="interestritial_ad_unit_id">a</string>
+    <string name="express_ad_unit_id">a</string>
+
+    <string name="camera">دوربین</string>
+    <string name="gallary">گالری</string>
+    <string name="collection">ساخته شده ها</string>
+    <string name="rate_us">امتیاز دادن</string>
+    <string name="more_apps">برنامه های بیشتر</string>
+    <string name="share_app">اشتراک گذاری</string>
+    <string name="love_this_app">دوست داشتید این برنامه رو ؟</string>
+    <string name="do_u_have_a_few_sec">از ما حمایت کنید.</string>
+    <string name="feedback">FeedBack</string>
+    <string name="rate_5_star">نظر دهی</string>
+    <string name="recommended">توصیه به دوستان</string>
+    <string name="if_u_hv_few_min">اگر یک دقیقه وقت دارید می توانید به ما کمک کنید تا این برنامه بیشتر به اشتراک گذاشته شود .</string>
+    <string name="fb_not_installed">اپلیکیشن فیسبوک نصب نیست</string>
+    <string name="instagram_not_installed">اپلیکیشن اینستاگرام نصب نیست</string>
+    <string name="whatsapp_not_installed">اپلیکیشن واتس اپ نیست</string>
+
+    <!--Share messages-->
+    <!--<string name="share_message_first">Hi,\n\nI have just found "Surreal Status" mobile app and it\'s too good. Probably you might also like it. Give it a try and recommend others if you think they also get benefit of it; after all it\'s FREE download. </string>-->
+    <string name="its_available_on_google_playstore">It\'s available Google Play Store and  iTunes, Link for Google Play Store is-\n\n</string>
+    <!--<string name="link_for_itunes">and Link for iTunes store is\n\nhttps://itunes.apple.com/us/app/surreal-status/id1168430091?ls=1&amp;mt=8</string>-->
+    <string name="thank_you_for_sharing">Thank you for sharing app. Please continue and complete sharing. We truly appreciate your support in helping others.</string>
+    <string name="choose_any">انتخاب تکی :</string>
+    <string name="no_files_available">فایلی موجود نیست</string>
+    <string name="my_creation">ساخته شده های من</string>
+    <string name="delete_creation">حذف ساخته شده</string>
+
+
+</resources>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_image_editor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.funnyface.make.facefunny.ImageEditorActivity">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adView"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:id="@+id/rlay1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/black">
+
+            <RelativeLayout
+                android:id="@+id/draglayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/horizontalScrollView1">
+
+                <!--<change.look.face.DragLayer-->
+                <!--android:id="@+id/drag_layer"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent">-->
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/frame"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:src="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_appName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="#c6000000"
+                        android:text="@string/app_name"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ccmContentRootView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </RelativeLayout>
+                <!--</change.look.face.DragLayer>-->
+
+
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout1"
+                    android:layout_width="830.0dip"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/Gemoji"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/rouned_button"
+                        android:src="@drawable/ic_emoji" />
+
+                    <ImageButton
+                        android:id="@+id/Gheart"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/rouned_button"
+                        android:src="@drawable/ic_heart" />
+
+                    <ImageButton
+                        android:id="@+id/Gtext"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/rouned_button"
+                        android:src="@drawable/ic_text" />
+
+                    <ImageButton
+                        android:id="@+id/Gmask"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/rouned_button"
+                        android:src="@drawable/mask" />
+
+                    <ImageButton
+                        android:id="@+id/Glips"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/rouned_button"
+                        android:src="@drawable/lips" />
+
+                    <ImageButton
+                        android:id="@+id/geye"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/rouned_button"
+                        android:src="@drawable/eye" />
+
+                    <!--<ImageButton-->
+                    <!--android:id="@+id/Ghead"-->
+                    <!--android:layout_width="60dp"-->
+                    <!--android:layout_height="60dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:background="@drawable/rouned_button"-->
+                    <!--android:src="@drawable/topi" />-->
+
+                    <ImageButton
+                        android:id="@+id/Gdadhi"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/rouned_button"
+                        android:src="@drawable/dadhi" />
+
+                    <ImageButton
+                        android:id="@+id/Ggoggles"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/rouned_button"
+                        android:src="@drawable/goggle0" />
+
+                    <ImageButton
+                        android:id="@+id/Gnose"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/rouned_button"
+                        android:src="@drawable/nose" />
+
+                    <ImageButton
+                        android:id="@+id/Gtie"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/rouned_button"
+                        android:src="@drawable/tie" />
+
+                    <ImageButton
+                        android:id="@+id/Gear"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/rouned_button"
+                        android:src="@drawable/ear" />
+
+                    <!--<ImageButton-->
+                    <!--android:id="@+id/Gcigar"-->
+                    <!--android:layout_width="60dp"-->
+                    <!--android:layout_height="60dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:background="@drawable/rouned_button"-->
+                    <!--android:src="@drawable/cigar" />-->
+
+                    <!--<ImageButton-->
+                    <!--android:id="@+id/Ghair"-->
+                    <!--android:layout_width="60dp"-->
+                    <!--android:layout_height="60dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:background="@drawable/rouned_button"-->
+                    <!--android:src="@drawable/hair" />-->
+
+                    <!--<ImageButton-->
+                    <!--android:id="@+id/Gmask"-->
+                    <!--android:layout_width="60dp"-->
+                    <!--android:layout_height="60dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:background="@drawable/rouned_button"-->
+                    <!--android:src="@drawable/masks" />-->
+
+                    <!--<ImageButton-->
+                    <!--android:id="@+id/Ghorror"-->
+                    <!--android:layout_width="60dp"-->
+                    <!--android:layout_height="60dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:background="@drawable/rouned_button"-->
+                    <!--android:src="@drawable/horror" />-->
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/done"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/ic_right_done" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
